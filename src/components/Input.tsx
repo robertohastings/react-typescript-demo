@@ -15,11 +15,11 @@ type InputProps = {
 export const Input = ({ value, handleChange}: InputProps) => {
   
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-      console.log(event)
+      //console.log(event.target.value)
     }
 
   return (
-    <input type='text' value={value} onChange={handleChange}/>
+    <input type='text' defaultValue={value} onChange={handleChange}/>
   )
 
 }

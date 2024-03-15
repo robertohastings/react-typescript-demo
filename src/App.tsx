@@ -69,7 +69,7 @@ function App() {
         console.log('Button clicked', event, id)
       }}/>
 
-      <Input value='1' handleChange={(event) => console.log(event)}/>
+      <Input value='1' handleChange={(event) => console.log('Value:',event.target.value)}/>
       <hr/>
       
       <Icon icon='microfono' size={30}/>
